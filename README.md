@@ -1,4 +1,4 @@
-Hari Sekhon Docker
+Docker Stuff for Dev and more
 ==================
 [![Build Status](https://travis-ci.org/HariSekhon/Dockerfiles.svg?branch=master)](https://travis-ci.org/HariSekhon/Dockerfiles) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/de6229f2d2ba4945acde9f86f59d2c66)](https://www.codacy.com/app/harisekhon/Dockerfiles) [![DockerHub](https://img.shields.io/badge/docker-available-blue.svg)](https://hub.docker.com/u/harisekhon/)
 
@@ -11,19 +11,9 @@ Docker Images containing hundreds of my published tools and the supporting techn
 
 These images are all available pre-built on [My DockerHub](https://hub.docker.com/u/harisekhon/).
 
-Hari Sekhon
-
-Big Data Contractor, United Kingdom
-
-https://www.linkedin.com/in/harisekhon
-###### (you're welcome to connect with me on LinkedIn)
 
 ### Ready to run Docker images
 
-```
-docker search harisekhon
-docker run harisekhon/nagios-plugins
-```
 
 To see more than the 25 DockerHub repos limited by ```docker search``` ([docker issue 23055](https://github.com/docker/docker/issues/23055)) I wrote ```dockerhub_search.py``` using the DockerHub API, available in my [PyTools github repo](https://github.com/harisekhon/pytools) and as a pre-built docker image:
 
