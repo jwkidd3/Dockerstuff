@@ -25,5 +25,5 @@ echo "# ========================================================================
 echo "                         S t a r t i n g   K a f k a"
 echo "# ============================================================================ #"
 echo $ADVERTISED_HOSTNAME
-#perl -pi.orig -e "s/\s*#?\s*listeners.*/listeners=PLAINTEXT://${ADVERTISED_HOSTNAME}:9092/" "/kafka/config/server.properties" && \
+perl -pi.orig -e "s/\s*#?\s*advertised.host.name.*/advertised.host.name=${ADVERTISED_HOSTNAME}/" "/kafka/config/server.properties" && \
 kafka-server-start.sh /kafka/config/server.properties

@@ -17,7 +17,8 @@ MAINTAINER Hari Sekhon (https://www.linkedin.com/in/harisekhon)
 #ARG SCALA_VERSION=2.10
 ARG SCALA_VERSION=2.11
 #ARG KAFKA_VERSION=0.8.2.2
-ARG KAFKA_VERSION=0.9.0.1
+#ARG KAFKA_VERSION=0.9.0.1
+ARG KAFKA_VERSION=0.10.2.0
 # 0.10 fails to come up
 #ARG KAFKA_VERSION=0.10.0.0
 
@@ -37,7 +38,8 @@ RUN \
     ln -sv "kafka_${SCALA_VERSION}-${KAFKA_VERSION}" kafka && \
     # attempting to remove tar causes unmet dependency breakage
     apk del wget
-
+RUN rm -f /kafka/config/server.properties
+ADD server.properties /kafka/config/server.properties
 COPY entrypoint.sh /
 
 EXPOSE 2181 9092

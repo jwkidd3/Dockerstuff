@@ -15,9 +15,10 @@
 version: '2.1'
 services:
   kafka:
-    image: harisekhon/kafka:${VERSION:-latest}
+#    image: harisekhon/kafka:${VERSION:-latest}
+    image: jkidd/kafka
     ports:
       - 2181:2181
       - 9092:9092
-    environment:
-      - ADVERTISED_HOSTNAME=$ADVERTISED_HOSTNAME
+#    environment:
+#      - ADVERTISED_HOSTNAME=${ADVERTISED_HOSTNAME}
