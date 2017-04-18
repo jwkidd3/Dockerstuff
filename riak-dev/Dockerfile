@@ -4,18 +4,18 @@
 #
 #  vim:ts=4:sts=4:sw=4:et
 #
-#  https://github.com/harisekhon/Dockerfiles/riak-dev
+#   /riak-dev
 #
-#  If you're using my code you're welcome to connect with me on LinkedIn and optionally send me feedback to help improve or steer this or other code I publish
+#    to help improve or steer this or other code I publish
 #
-#  https://www.linkedin.com/in/harisekhon
+#   
 #
 
 # can't base off official Riak as it's missing deps to run the tools
 #FROM riak:latest
 # this is so that the nagios-plugin deps are available to mount new versions calling local programs eg. riak-admin
 FROM harisekhon/centos-github:latest
-MAINTAINER Hari Sekhon (https://www.linkedin.com/in/harisekhon)
+MAINTAINER Hari Sekhon ( )
 
 #ARG RIAK_VERSION=1.4.9
 # LTS release

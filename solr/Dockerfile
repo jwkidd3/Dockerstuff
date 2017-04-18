@@ -4,16 +4,16 @@
 #
 #  vim:ts=4:sts=4:sw=4:et
 #
-#  https://github.com/harisekhon/Dockerfiles/solr
+#   /solr
 #
-#  If you're using my code you're welcome to connect with me on LinkedIn and optionally send me feedback to help steer this or other code I publish
+#    to help steer this or other code I publish
 #
-#  https://www.linkedin.com/in/harisekhon
+#   
 #
 
 # not basing on official solr as it doesn't have Solr < 5.0 which I want to keep using for my test suite
 FROM alpine:latest
-MAINTAINER Hari Sekhon (https://www.linkedin.com/in/harisekhon)
+MAINTAINER Hari Sekhon ( )
 
 #ARG SOLR_VERSION=3.1.0
 #ARG SOLR_VERSION=3.6.2

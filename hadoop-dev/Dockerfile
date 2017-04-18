@@ -4,15 +4,15 @@
 #
 #  vim:ts=4:sts=4:sw=4:et
 #
-#  https://github.com/harisekhon/Dockerfiles/hadoop-dev
+#   -dev
 #
-#  If you're using my code you're welcome to connect with me on LinkedIn and optionally send me feedback
+#   
 #
-#  https://www.linkedin.com/in/harisekhon
+#   
 #
 
 FROM harisekhon/centos-github:latest
-MAINTAINER Hari Sekhon (https://www.linkedin.com/in/harisekhon)
+MAINTAINER Hari Sekhon ( )
 
 #ARG HADOOP_VERSION=1.2.1
 #ARG HADOOP_VERSION=2.5.2

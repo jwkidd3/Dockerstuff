@@ -4,15 +4,15 @@
 #
 #  vim:ts=4:sts=4:sw=4:et
 #
-#  https://github.com/harisekhon/Dockerfiles/hbase
+#   /hbase
 #
-#  If you're using my code you're welcome to connect with me on LinkedIn and optionally send me feedback
+#   
 #
-#  https://www.linkedin.com/in/harisekhon
+#   
 #
 
 FROM alpine:latest
-MAINTAINER Hari Sekhon (https://www.linkedin.com/in/harisekhon)
+MAINTAINER Hari Sekhon ( )
 
 #ARG HBASE_VERSION=0.94.27
 #ARG HBASE_VERSION=0.96.2

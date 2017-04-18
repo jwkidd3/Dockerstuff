@@ -4,17 +4,17 @@
 #
 #  vim:ts=4:sts=4:sw=4:et
 #
-#  https://github.com/harisekhon/Dockerfiles/spark
+#   /spark
 #
-#  If you're using my code you're welcome to connect with me on LinkedIn and optionally send me feedback to help improve or steer this or other code I publish
+#    to help improve or steer this or other code I publish
 #
-#  https://www.linkedin.com/in/harisekhon
+#   
 #
 
 #FROM harisekhon/centos-java:jre7
 # > 100MB smaller than centos
 FROM alpine:latest
-MAINTAINER Hari Sekhon (https://www.linkedin.com/in/harisekhon)
+MAINTAINER Hari Sekhon ( )
 
 ARG SPARK_VERSION=1.6.2
 ARG HADOOP_VERSION=2.6

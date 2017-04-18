@@ -4,15 +4,15 @@
 #
 #  vim:ts=4:sts=4:sw=4:et
 #
-#  https://github.com/harisekhon/Dockerfiles/debian-dev
+#   /debian-dev
 #
-#  If you're using my code you're welcome to connect with me on LinkedIn and optionally send me feedback to help improve or steer this or other code I publish
+#    to help improve or steer this or other code I publish
 #
-#  https://www.linkedin.com/in/harisekhon
+#   
 #
 
 FROM harisekhon/debian-java:jdk8
-MAINTAINER Hari Sekhon (https://www.linkedin.com/in/harisekhon)
+MAINTAINER Hari Sekhon ( )
 
 LABEL Description="Debian Dev Build"
 

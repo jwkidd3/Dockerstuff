@@ -4,18 +4,18 @@
 #
 #  vim:ts=4:sts=4:sw=4:et
 #
-#  https://github.com/harisekhon/Dockerfiles/consul-dev
+#   /consul-dev
 #
-#  If you're using my code you're welcome to connect with me on LinkedIn and optionally send me feedback to help improve or steer this or other code I publish
+#    to help improve or steer this or other code I publish
 #
-#  https://www.linkedin.com/in/harisekhon
+#   
 #
 
 # busybox wget doesn't support SSL, no curl available :-(
 #FROM busybox:latest
 # -dev version allows testing of local consul command utils like check_consul_version.py
 FROM harisekhon/alpine-github:latest
-MAINTAINER Hari Sekhon (https://www.linkedin.com/in/harisekhon)
+MAINTAINER Hari Sekhon ( )
 
 #ARG CONSUL_VERSION=0.1.0
 #ARG CONSUL_VERSION=0.2.1
