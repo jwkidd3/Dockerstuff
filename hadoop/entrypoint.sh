@@ -6,7 +6,7 @@
 #
 #   
 #
-#  License: see accompanying Hari Sekhon LICENSE file
+#   
 #
 #   
 #
