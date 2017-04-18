@@ -15,7 +15,7 @@
 version: '2.1'
 services:
   hadoop:
-    image: jwkidd/hadoop:${VERSION:-latest}
+    image: hadoop:${VERSION:-latest}
     ports:
       - 8020:8020
       - 8042:8042
