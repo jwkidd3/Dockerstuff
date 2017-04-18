@@ -3,20 +3,10 @@
 #  Date: 2016-04-24 21:18:57 +0100 (Sun, 24 Apr 2016)
 #
 #  vim:ts=4:sts=4:sw=4:et
-#
-#  https://github.com/harisekhon/Dockerfiles/hadoop
-#
-#  If you're using my code you're welcome to connect with me on LinkedIn and optionally send me feedback
-#
-#  https://www.linkedin.com/in/harisekhon
-#
 
 FROM harisekhon/centos-java:latest
-MAINTAINER Hari Sekhon (https://www.linkedin.com/in/harisekhon)
+MAINTAINER Hari Sekhon ( )
 
-#ARG HADOOP_VERSION=1.2.1
-#ARG HADOOP_VERSION=2.5.2
-#ARG HADOOP_VERSION=2.6.4
 ARG HADOOP_VERSION=2.7.2
 
 ARG TAR=hadoop-$HADOOP_VERSION.tar.gz
@@ -35,14 +25,12 @@ RUN \
     ln -sv hadoop-$HADOOP_VERSION hadoop && \
     rm -fv "$TAR" && \
     { rm -rf hadoop/share/doc; : ; } && \
-    # Hadoop 1.x
-    #/hadoop/bin/hadoop namenode -format && \
-    # Hadoop 2.x
-    /hadoop/bin/hdfs namenode -format && \
-    yum remove -y wget tar && \
-    yum autoremove -y && \
-    yum install -y hostname && \
-    yum clean all
+    /hadoop/bin/hdfs namenode -format
+
+#RUN yum remove -y wget tar
+RUN yum autoremove -y
+RUN yum install -y hostname
+RUN yum clean all
 
 COPY entrypoint.sh /
 COPY conf/core-site.xml /hadoop/etc/hadoop/

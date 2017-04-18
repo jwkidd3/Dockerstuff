@@ -4,13 +4,13 @@
 #  Author: Hari Sekhon
 #  Date: 2016-04-24 21:29:46 +0100 (Sun, 24 Apr 2016)
 #
-#  https://github.com/harisekhon/Dockerfiles/hadoop
+#   
 #
 #  License: see accompanying Hari Sekhon LICENSE file
 #
-#  If you're using my code you're welcome to connect with me on LinkedIn and optionally send me feedback
+#   
 #
-#  https://www.linkedin.com/in/harisekhon
+#   
 #
 
 set -euo pipefail
@@ -51,8 +51,9 @@ else
     sed -i "s/localhost/$hostname/" /hadoop/etc/hadoop/core-site.xml
 
     /hadoop/sbin/start-dfs.sh
-    /hadoop/sbin/start-yarn.sh
+   hdfs dfs -chmod -R 777 /
+#    /hadoop/sbin/start-yarn.sh
     tail -f /hadoop/logs/*
-    /hadoop/sbin/stop-yarn.sh
+#   /hadoop/sbin/stop-yarn.sh
     /hadoop/sbin/stop-dfs.sh
 fi
