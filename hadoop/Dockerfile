@@ -26,7 +26,8 @@ RUN \
     rm -fv "$TAR" && \
     { rm -rf hadoop/share/doc; : ; } && \
     /hadoop/bin/hdfs namenode -format
-
+RUN wget -t 100 --retry-connrefused -O "$TAR" "http://d3kbcqa49mib13.cloudfront.net/spark-2.1.0-bin-hadoop2.7.tgz" && tar xvf "$TAR" && ln -sv ./spark-2.1.0-bin-hadoop2.7 ./spark
+RUN rm -fv spark-2.1.0-bin-hadoop2.7.tgz
 #RUN yum remove -y wget tar
 RUN yum autoremove -y
 RUN yum install -y hostname
