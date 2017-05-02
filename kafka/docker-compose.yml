@@ -2,13 +2,6 @@
 #
 #  Author: Hari Sekhon
 #  Date: 2016-12-10 09:52:03 +0000 (Sat, 10 Dec 2016)
-#
-#   
-#
-#   
-#
-#    to help steer this or other code I publish
-#
 #   
 #
 
@@ -16,7 +9,7 @@ version: '2.1'
 services:
   kafka:
 #    image: harisekhon/kafka:${VERSION:-latest}
-    image: jkidd/kafka
+    image: kafka
     ports:
       - 2181:2181
       - 9092:9092
